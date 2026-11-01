@@ -1,0 +1,67 @@
+==============================================================
+        NODE BOB - PENERIMA TIKET + PENERIMA/PENGIRIM AES
+==============================================================
+[KDC]     127.0.0.2:30812
+[DENGAR]  127.0.0.4:30813
+[KUNCI]   K_B = KunciBobKI2026XX (16 ASCII)
+==============================================================
+
+[SIAP] bob mendengarkan di 127.0.0.4:30813
+[INFO] IP yang dipakai untuk koneksi akan tampil di status.
+
+[KONEKSI] 127.0.0.3:30815 -> 127.0.0.4:30813
+
+[LANGKAH 3] diterima dari 127.0.0.3:30815: E_KB[K_S, ID_A] (HEX) = 0979035ae23bbc45e3b85641b3271aac9000195b2b8e989d77af814c0994dcb30829a46219a452d806556d7d01c65cf2a15d7c439f5cfc3e687374a531ae4e727bc4651fafebcbbe29c88d6b697790b0bd078a6f18be1af4d2d08636ad46cf8eb728bac6684370224122236a88984d95
+[LANGKAH 4] bob -> alice : E_KS[N2] (HEX) = e885f78ba49beaef615c74d11614a5c2ab77b52922524da32636d69b0d6f548a
+            N2 = 812983547
+[LANGKAH 5] diterima: E_KS[N2-1] (HEX) = 4f1f1dc987268fe561f561d59ef674a263025b0b97a41e4212c7670f89f85cf3
+[SESI] Terbentuk 01:55:25 dengan alice @ 127.0.0.3:30815
+[SESI] K_S = cXsVpSnikQHWjs5W (16 ASCII)
+[STATUS] peran         : bob
+[STATUS] ID node       : bob
+[STATUS] KDC           : 127.0.0.2:30812
+[STATUS] K_A/K_B (ASCII): KunciBobKI2026XX
+[STATUS] lawan         : alice @ 127.0.0.3:30815
+[STATUS] lokal         : 127.0.0.4:30813
+[STATUS] sesi KDC      : None
+[STATUS] K_S (ASCII)   : cXsVpSnikQHWjs5W
+[STATUS] mulai         : 01:55:25
+[STATUS] pesan         : TX=0 RX=0
+[STATUS] status        : aktif
+
+==============================================================
+[DITERIMA #1] dari alice @ 127.0.0.3:30815
+Ciphertext AES (HEX) : ae1264a56f6eb3353ce4e0efa5056273791729e8936bf60c940ed8ad45cc2fc4b02f666785ca16b25b24fa775c212200ae0bf7f2a38923c4ad72f7c845c66092
+Plaintext            : Pesan uji dari Alice
+==============================================================
+[TERKIRIM] Ciphertext AES (HEX) : fcb9c6120886b7395738be8b8270338ff4e752f6f5c7606d362e9ac8d2554d2be0503b34d6b8019b5ee80562cd1be359
+[TERKIRIM] Panjang ciphertext   : 48 byte
+
+==============================================================
+[DITERIMA #2] dari alice @ 127.0.0.3:30815
+Ciphertext AES (HEX) : 4191a3a14ad4e5bc108c337bb24de8dc3c36dd4a4f250925b34fd53d3bde6fe58a43b9f550dd8a5d1091022dd824437960d11fb793ea74b664c3dab1f80baa19
+Plaintext            : Pesan uji dari Alice
+==============================================================
+[TERKIRIM] Ciphertext AES (HEX) : d3d6b4b26898201987adbb87a58823d608cfd54988d25ed79ec828ce098b4c15c1f7e64847085e24679ec6bf9f2b5690
+[TERKIRIM] Panjang ciphertext   : 48 byte
+
+[KUNCI] Lawan mengganti kunci sesi. K_S baru = pYrWngRmW25XZhyQ
+[KUNCI] Konfirmasi dikirim dengan kunci baru.
+
+==============================================================
+[DITERIMA #3] dari alice @ 127.0.0.3:30815
+Ciphertext AES (HEX) : c6177538addf48a92058c50da0621cbe5c9577b0ab0c321ac6b30a252e1ddcad17574ed082a6a4f3774c711758aa2941409d611d76a1beb4cee3f789b02bb580
+Plaintext            : Pesan uji dari Alice
+==============================================================
+[TERKIRIM] Ciphertext AES (HEX) : 2edf2f99ff43b47a98d8271afd71b38311b8cd91e2518a878963a0e2739457c6035acc60bcbe21e635c928f632959114
+[TERKIRIM] Panjang ciphertext   : 48 byte
+
+[INFO] Lawan menutup koneksi.
+[INFO] Sesi berakhir.
+[STATUS] peran         : bob
+[STATUS] ID node       : bob
+[STATUS] KDC           : 127.0.0.2:30812
+[STATUS] K_A/K_B (ASCII): KunciBobKI2026XX
+[STATUS] sesi          : belum terbentuk
+[HASIL] Sesi selesai: 3 pesan diterima, 3 pesan dibalas.
+[INFO] Menunggu koneksi berikutnya di 127.0.0.4:30813
